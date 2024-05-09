@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.travell-section{
+    background-image: url("pexels-goumbik-628281.jpg");
+    width: 100%;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+.travell-section h1{
+    text-align: center;
+    padding: 25px 0px;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.travell-items{
+    flex-basis: 20%;
+    background-color:blanchedalmond ;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 10px 3px lightgray;
+    text-align: center;
+    padding: 20px 0px;
+    
+}
+.travell-items h3{
+    padding: 10px 0px;
+
+}
+.travell-items p{
+    font-size: 14px;
+    padding: 10px;
+
+
+}
+
+.travell-items button{
+    border: none;
+    background-color: blue;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 5px;
+    margin: 10px 20px;
+}
+
+.travell-items:hover {
+    background-color:burlywood ;
+
+}
+.travell-items:hover h3 {
+    color: brown;
+
+}
+.travell-items:hover button {
+    color: brown;
+    background: white;
+
+}
+
+@media only screen and (min-width:200px) and (max-width:767px) {
+    .container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .travell-items{
+        padding: 10px;
+        margin: 10px;
+    }
+    .travell-section{
+        background: fixed;
+    }
+    
+}
